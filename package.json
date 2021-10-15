@@ -4,7 +4,6 @@
   "homepage": ".",
   "private": true,
   "dependencies": {
-    "@loadable/component": "^5.15.0",
     "@reduxjs/toolkit": "^1.6.2",
     "antd": "^4.17.0-alpha.5",
     "react": "^17.0.2",
@@ -20,7 +19,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build",
+    "preserve": "npm run build",
+    "serve": "serve -s build -l 5000"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +52,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.1",
     "craco-module-federation": "^1.1.0",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "serve": "^12.0.1"
   }
 }
